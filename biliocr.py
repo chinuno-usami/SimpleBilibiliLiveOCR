@@ -61,6 +61,7 @@ def procimg(img):
     """
     im = Image.open(img).convert("1")
     res = splitimg(im)
+    im.close();
     return res
 
 def main(argv):
